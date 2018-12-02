@@ -248,51 +248,103 @@
                 android:layout_height="99dp"
                 android:layout_alignTop="@+id/midnight"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
                 android:layout_marginStart="48dp"
+                android:layout_alignParentLeft="true"
                 android:layout_marginLeft="48dp"
                 android:layout_marginTop="745dp"
-                android:background="#8000FF00"
-                android:text="Help Sisters" />
+                android:background="#80ffFF00"
+                android:text="Johnny: Help Sisters" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="194dp"
                 android:layout_height="50dp"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="48dp"
+                android:layout_alignParentLeft="true"
                 android:layout_marginLeft="48dp"
                 android:layout_marginTop="907dp"
-                android:background="#8000FF00"
-                android:text="Music Lessons" />
+                android:background="#80ffFF00"
+                android:text="Johnny: Music Lessons" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="194dp"
                 android:layout_height="50dp"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="48dp"
+                android:layout_alignParentLeft="true"
                 android:layout_marginLeft="48dp"
                 android:layout_marginTop="1005dp"
-                android:background="#8000FF00"
-                android:text="Shopping with Mom" />
+                android:background="#80ffFF00"
+                android:text="Johnny: Shopping with Mom" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="194dp"
                 android:layout_height="49dp"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="48dp"
+                android:layout_alignParentLeft="true"
                 android:layout_marginLeft="48dp"
                 android:layout_marginTop="1104dp"
-                android:background="#8000AA00"
-                android:text="Sneak Out" />
+                android:background="#80ffff00"
+                android:text="Johnny: Sneak Out" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="194dp"
+                android:layout_height="148dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="907dp"
+                android:background="#40ff0000"
+                android:text="Charlie: Farewell Party" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="194dp"
+                android:layout_height="98dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="1054dp"
+                android:background="#40ff0000"
+                android:text="Charlie: Study Group" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="194dp"
+                android:layout_height="49dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="810dp"
+                android:background="#300000ff"
+                android:text="Emily: Book Club" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="194dp"
+                android:layout_height="99dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="907dp"
+                android:background="#300000ff"
+                android:text="Emily: Dinner Party" />
 
         </RelativeLayout>
     </LinearLayout>
