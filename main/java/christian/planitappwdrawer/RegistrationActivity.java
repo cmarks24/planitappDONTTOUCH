@@ -5,13 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.support.v4.app.Fragment;
+import android.widget.Button;
+import android.view.View;
+import android.content.Intent;
+
 
 public class RegistrationActivity extends AppCompatActivity {
 
     private static final String TAG = "RegistrationActivity";
 
-    //private SectionsStatePagerAdapter mSectionsStatePagerAdapter;
-    //private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,22 +21,16 @@ public class RegistrationActivity extends AppCompatActivity {
         setContentView(R.layout.registration_activity);
         Log.d(TAG, "onCreate: Started.");
 
+        Button btn = (Button)findViewById(R.id.btnNavLog);
 
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
+            }
+        });
 
-        //mSectionsStatePagerAdapter = new SectionsStatePagerAdapter(getSupportFragmentManager());
-
-        //mViewPager = (ViewPager) findViewById(R.id.container);
-        //setup the pager
-        //setupViewPager(mViewPager);
 
     }
 
-    //private void setupViewPager(ViewPager viewPager){
-        //SectionsStatePagerAdapter adapter = new SectionsStatePagerAdapter(getSupportFragmentManager());
-        //adapter.addFragment(new FragmentLogIn(), "Log In");
-        //adapter.addFragment(new FragmentRegister(), "Register");
-        //viewPager.setAdapter(adapter);
-   // }
-
-    //public void setViewPager(int fragmentNumber){ mViewPager.setCurrentItem(fragmentNumber); }
 }
