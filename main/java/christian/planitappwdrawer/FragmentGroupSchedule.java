@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 
 import christian.planitappwdrawer.R;
 
+
+
 public class FragmentGroupSchedule extends Fragment {
     private static final String TAG = "Account";
 
@@ -18,7 +20,7 @@ public class FragmentGroupSchedule extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_group_schedule, container, false);
+        View view = inflater.inflate(R.layout.groupsch_activity, container, false);
 
         return view;
     }
