@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity
             fragmentClass = FragmentPersonalSchedule.class;
         } else if (id == R.id.nav_create_event) {
             fragmentClass = FragmentEditEvent.class;
+            FragmentHomePage.boo = true;
         } else if (id == R.id.nav_groups_page) {
             fragmentClass = FragmentGroupPage.class;
         } else if (id == R.id.nav_account_info) {
