@@ -4,23 +4,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import christian.planitappwdrawer.MainActivity;
 
 
 
-public class FragmentLogIn extends Fragment {
+public class FragmentLogIn extends Fragment implements TextWatcher {
     private static final String TAG = "Fragment1";
 
     private Button btnNavFrag1;
     private Button btnNavFrag2;
     private Button btnNavSecondActivity;
+    EditText editTextPassword = null;
+    String blah;
 
     @Nullable
     @Override
@@ -29,6 +34,8 @@ public class FragmentLogIn extends Fragment {
         btnNavFrag1 = (Button) view.findViewById(R.id.btnNavFrag1);
         btnNavFrag2 = (Button) view.findViewById(R.id.btnNavFrag2);
         btnNavSecondActivity = (Button) view.findViewById(R.id.btnNavSecondActivity);
+        editTextPassword = (EditText) view.findViewById(R.id.editTextPassword);
+        editTextPassword.addTextChangedListener(this);
         Log.d(TAG, "onCreateView: started.");
 
         btnNavFrag1.setOnClickListener(new View.OnClickListener() {
@@ -55,13 +62,37 @@ public class FragmentLogIn extends Fragment {
         btnNavSecondActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "Going to HomePage", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getActivity(), MainActivity.class);
-                startActivity(intent);
+                if(blah.equals(null)){ blah.equals("Wrong");}
+                else if( blah.equals( "Testing" )|| blah.equals( "testing")) {
+                    Toast.makeText(getActivity(), "Going to HomePage", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
+                }
+                else{
+                    Toast.makeText(getActivity(),"Wrong Password", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
 
         return view;
+    }
+
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+        blah = s.toString();
+        if(blah.equals("Testing")){
+            Toast.makeText(getActivity(), "You Had It", Toast.LENGTH_SHORT).show();
+        }
     }
 }
